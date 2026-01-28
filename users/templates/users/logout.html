@@ -1,0 +1,16 @@
+{% extends "main/home.html" %}
+{% load static %}
+
+{% block title %}
+<title>Logout</title>
+{% endblock title %}
+
+{% block content %}
+<div class="div-container">
+    <h2>Successfully logged out</h2>
+
+    <a class="div-container" style="display: block; " href="{% url 'login' %}">Login again</a> 
+    <br>
+    <a class="div-container"style="display: block;" href="{% url 'home' %}">Go home</a>
+</div>
+{% endblock content %}

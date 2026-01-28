@@ -1,0 +1,14 @@
+{%extends "main/home.html"%}
+{% load static %}
+{% block title %}
+<title>Login</title>
+{% endblock title %}
+{%block content%}
+    <form method="POST" class = "div-container">
+        {% csrf_token %}
+        <p1 style="font-size: 20px">{{form.as_p}}</p1>
+        <div>
+            <input type="submit" value="Login">
+        </div>
+    </form>
+{%endblock content%}
